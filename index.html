@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset = "utf-8">
+    <title>Music Player Demo</title>
+    <link rel="stylesheet" href="./main.css">
+  </head>
+
+    <body>
+    <header>
+      <h1>Music Player Demo</h1>
+      <h3>Draft</h3>
+    </header>
+
+<!-- Add top rough navigation bar-->
+
+    <section class="top">
+      <div>
+        <ul class="nav">
+          <li><a href="#">View Music</a></li>
+          <li>|</li>
+          <li><a href="#">Add Music</a></li>
+          <li>|</li>
+          <li><a href="#">Profile</a></li>
+        </ul>
+      </div>
+    </section>
+
+<!--Add options panel and song information-->
+  <!--First: Left side options-->
+
+    <section class="Middle">
+      <div class="options">
+        <div class="song-length">
+          <label for="song-length">Song Length:</label><br>
+            <input type="range" name="song-length" min="0" max="5" step="0.25" value="3.0" />
+        </div>
+        <div class="artist">
+          <label name="artist">Artist:</label><br>
+          <input name="artist" list="artist" />
+            <datalist id="artist">
+              <option value="Talking Heads">
+              <option value="Minor Threat">
+              <option value="Four Tops">
+              <option value="Gogol Bordello">
+              <option value="Operation Ivy">
+            </datalist><br>
+        </div></br>
+        <div class="album">
+          <label name="album">Album:</label><br>
+          <input name="album" list="album" />
+            <datalist id="album">
+              <option value="Little Creatures">
+              <option value="Remain in Light">
+              <option value="Red">
+              <option value="Reach Out">
+              <option value="Gypsy Punks">
+              <option value="Multi Kontra Culti vs Irony">
+              <option value="Operation Ivy">
+            </datalist>
+        </div>
+        <div>
+          <p><legend>Genre:</legend></p>
+
+    <!--Using table as last resort to align checkboxes
+    Consider also float: left for everything -->
+
+            <table align=center>
+              <tr><td><input type="checkbox" name="genre"     value="rock">Rock</td>
+                <td><input type="checkbox" name="genre"       value="classical">Classical</td></tr>
+              <tr><td><input type="checkbox" name="genre" value="pop">Pop</td>
+                <td><input type="checkbox" name="genre" value="jazz">Jazz</td></tr>
+              <tr><td><input type="checkbox" name="genre" value="blues">Blues</td>
+                <td><input type="checkbox" name="genre" value="hiphop">Hip Hop</td></tr>
+          </table>
+        </div>
+      <p align=center><button style="width:100px">Filter</button</p>
+      </div>
+
+  <!--Second: Song information-->
+
+      <div id="songinfo">
+        <!-- <h1> Once in a Lifetime</h1>
+        <p> Talking Heads | Remain in Light | Pop </p>
+        <h1> Crosseyed and Painless</h1>
+        <p> Talking heads | Remain in Light | Pop</p>
+        <h1> And She Was</h1>
+        <p> Talking Heads | Little Creatures | Pop</p>
+        <h1> Road to Nowhere</h1>
+        <p> Talking Heads | Little Creatures | Pop</p>
+ -->
+      <!--
+        <h1> Filler</h1>
+        <p> Minor Threat | Red | Rock</p>
+        <h1> In My Eyes</h1>
+        <p> Minor Threat | Red | Rock</p>
+        <h1> Betray</h1>
+        <p> Minor Threat | Red | Rock</p>
+        <h1> Out of Step</h1>
+        <p> Minor Threat | Red | Rock</p>
+        <h1> Bernadette</h1>
+        <p> Four Tops | Reach Out | Pop</p>
+        <h1> Reach Out </h1>
+        <p> Four Tops Reach Out | Pop</p>
+        <h1> Standing in the Shadows of Love</h1>
+        <p> Four Tops | Reach Out | Pop</p>
+        <h1> Walk Away Renee</h1>
+        <p> Four Tops | Reach Out | Pop</p>
+        <h1> Dogs were Barking </h1>
+        <p> Gogol Bordello | Gypsy Punks | Rock</p>
+        <h1> Start Wearing Purple</h1>
+        <p> Gogol Bordello | Gypsy Punks | Rock</p>
+        <h1> Not a Crime</h1>
+        <p> Gogol Bordello | Gypsy Punks | Rock</p>
+        <h1> Through the Roof</h1>
+        <p> Gogol Bordello | Multi Kontra Culti vs Irony | Rock</p>
+        <h1>Healthy Body</h1>
+        <p> Operation Ivy | Operation Ivy | Rock</p>
+        <h1>Knowledge</h1>
+        <p> Operation Ivy | Operation Ivy | Rock</p>
+        <h1>Sound System</h1>
+        <p> Operation Ivy | Operation Ivy | Rock</p>
+        <h1>Take Warning</h1>
+        <p> Operation Ivy | Operation Ivy | Rock</p>-->
+      </div>
+    </section>
+
+    <div class="nowrap">
+    </div>
+
+<!--  End music player layout-->
+
+    <footer>
+      <p>&copy; 2015 NSS</p>
+    </footer>
+
+    <script src="./main.js"></script>
+
+  </body>
+
+</html>
